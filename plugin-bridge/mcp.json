@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "local-mcp-bridge": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${PLUGIN_ROOT}/server/mcp_bridge.py"],
+      "env": {
+        "MCP_UPSTREAM_CONFIG": "${PLUGIN_DATA}/upstream.json"
+      },
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

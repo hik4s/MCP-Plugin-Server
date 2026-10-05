@@ -1,0 +1,12 @@
+{
+  "command": "npx",
+  "args": [
+    "--yes",
+    "tsx",
+    "C:/path/to/mcp-local-dev-server/src/index.ts"
+  ],
+  "cwd": "C:/path/to/mcp-local-dev-server",
+  "env": {
+    "MCP_WORKSPACE_ROOT": "C:/path/to/your/project"
+  }
+}

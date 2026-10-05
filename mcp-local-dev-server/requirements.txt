@@ -1,0 +1,12 @@
+MCP Local Dev Server - requisitos
+
+SO: Windows 10/11
+Node.js: >= 20.0.0 (LTS recomendado)
+npm: >= 10.0.0
+
+Dependencias npm:
+@modelcontextprotocol/server 2.3.0
+zod 4.1.12
+tsx 4.20.6
+
+Instalacao automatica: installer\INSTALAR_E_CONFIGURAR.bat

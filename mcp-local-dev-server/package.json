@@ -1,0 +1,24 @@
+{
+  "name": "mcp-local-dev-server",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP development server for code work and PowerShell/PowerShell Remoting.",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "inspect": "mcp-inspector npx --yes tsx src/index.ts",
+    "start:local": "node --import tsx src/index.ts",
+    "check": "node --import tsx --help"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.0",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "tsx": "4.20.6"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mcp-local-dev-bridge",
+  "version": "0.1.2",
+  "description": "Private bridge from an Agent Plugins host to a user-configured local MCP server for code development and PowerShell workflows.",
+  "author": {
+    "name": "Kauan"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "MCP Local Dev Bridge",
+        "shortDescription": "Local MCP + PowerShell",
+        "longDescription": "Connects the host to a local MCP server through stdio. Designed for code inspection, debugging, testing, file edits, development commands, and PowerShell/PowerShell Remoting. Use npx to launch the Node MCP server from the user machine.",
+        "developerName": "Kauan",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": "Use my local MCP bridge to inspect, debug, test, and help modify my code. Use read-only tools freely when appropriate. Before file writes, development commands, or PowerShell actions with side effects, show what will happen and require user approval."
+      }
+    }
+  }
+}
